@@ -47,7 +47,7 @@ void BandBReport::makeReport() const {
 	//}
 	out<<" position is: "<<_position<<endl;
 //	cerr<<"reportFileIs: "<<_reportFileName<<endl;
-	if (out == NULL) {
+	if (!out) {
 		errorMsg::reportError("unable to open output file for reporting");
 	}
 //	exit(555);
